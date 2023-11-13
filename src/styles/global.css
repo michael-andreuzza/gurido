@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+h1, h2, h3, h4, h5, h6, p, a, strong, em, span {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility
+}
+/* CSS */
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}

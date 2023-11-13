@@ -1,15 +1,16 @@
 ---
 import BaseHead from "@/components/BaseHead.astro";
-
+import Navigation from "@/components/global/Navigation.astro"
+import Footer from "@/components/global/Footer.astro"
 ---
 
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <BaseHead />
   </head>
-  <body class="bg-white">
-   
-    <slot />
-
+  <body class="bg-[#0f1014] flex flex-col min-h-screen mx-auto 2xl:max-w-screen-xl">
+    <Navigation/>
+    <main class="flex-grow"><slot /></main>
+    <Footer/>
   </body>
 </html>

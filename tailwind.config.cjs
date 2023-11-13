@@ -1,123 +1,123 @@
-/** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
-module.exports = {
-  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-  theme: {
-    screens: {
-      sm: "540px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-      "2xl": "1536px",
-    },
-    fontSize: {
-      xs: [
-        "0.75rem",
-        {
-          lineHeight: "1rem",
+  /** @type {import('tailwindcss').Config} */
+  const defaultTheme = require("tailwindcss/defaultTheme");
+  const colors = require("tailwindcss/colors");
+  module.exports = {
+    content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+    theme: {
+      extend: {
+        animation: {
+          marquee: 'marquee 25s linear infinite',
+          marquee2: 'marquee2 25s linear infinite',
+          scroller3: 'scroller3 25s linear infinite',
+          'spin-slow': 'spin 4s linear infinite',
+          'spin-slower': 'spin 6s linear infinite',
+          'spin-reverse': 'spin-reverse 1s linear infinite',
+          'spin-reverse-slow': 'spin-reverse 4s linear infinite',
+          'spin-reverse-slower': 'spin-reverse 6s linear infinite',
+          scroller: 'scroller 15s linear infinite',
+          scroller2: 'scroller2 20s linear infinite',
+          'fade-in': 'fade-in 0.5s linear forwards',
         },
-      ],
-      sm: [
-        "0.875rem",
-        {
-          lineHeight: "1.5rem",
+        keyframes: {
+          marquee: {
+            '0%': {
+              transform: 'translateX(0%)'
+            },
+            '100%': {
+              transform: 'translateX(-100%)'
+            },
+          },
+          marquee2: {
+            '0%': {
+              transform: 'translateX(100%)'
+            },
+            '100%': {
+              transform: 'translateX(0%)'
+            },
+          },
+          scroller: {
+            '0%': {
+              transform: 'translateY(10em)'
+            },
+            '100%': {
+              transform: 'translateY(-14em)'
+            },
+          },
+          scroller2: {
+            '0%': {
+              transform: 'translateY(10em)'
+            },
+            '100%': {
+              transform: 'translateY(-14em)'
+            },
+          },
+          'fade-in': {
+            from: {
+              opacity: 0,
+            },
+            to: {
+              opacity: 1,
+            },
+          },
+          scroller3: {
+            '100%': {
+              transform: 'translateY(-50%)',
+            },
+          },
+          'spin-reverse': {
+            to: {
+              transform: 'rotate(-360deg)',
+            },
+          },
         },
-      ],
-      base: [
-        "1rem",
-        {
-          lineHeight: "1.75rem",
-        },
-      ],
-      lg: [
-        "1.125rem",
-        {
-          lineHeight: "2rem",
-        },
-      ],
-      xl: [
-        "1.25rem",
-        {
-          lineHeight: "2rem",
-        },
-      ],
-      "2xl": [
-        "1.5rem",
-        {
-          lineHeight: "2rem",
-        },
-      ],
-      "3xl": [
-        "2rem",
-        {
-          lineHeight: "2.5rem",
-        },
-      ],
-      "4xl": [
-        "2.5rem",
-        {
-          lineHeight: "3.5rem",
-        },
-      ],
-      "5xl": [
-        "3rem",
-        {
-          lineHeight: "3.5rem",
-        },
-      ],
-      "6xl": [
-        "3.75rem",
-        {
-          lineHeight: "1",
-        },
-      ],
-      "7xl": [
-        "4.5rem",
-        {
-          lineHeight: "1.1",
-        },
-      ],
-      "8xl": [
-        "6rem",
-        {
-          lineHeight: "1",
-        },
-      ],
-      "9xl": [
-        "8rem",
-        {
-          lineHeight: "1",
-        },
-      ],
-    },
-    extend: {
+        backgroundImage: (theme) => ({
+          // Blue Gradient
+          gradientdown: "radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#364ef580 69.27%,#6698ff 100%);",
+          gradientup: "radial-gradient(131.66% 109.77% at 50% 97.75%, transparent 37.41%,#364ef580   69.27%,  #6698ff 100%);",
+// Monochrome gradient
+          //gradientdown: "radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#33333380 69.27%,#686868 100%);",
+          //gradientup: "radial-gradient(131.66% 109.77% at 50% 97.75%, transparent 37.41%,#33333380   69.27%,  #686868 100%);",
 
-      colors: {
-
-        blue: {
-         50: "#EBEBFF",
-      100: "#D2D2FE",
-      200: "#A6A4FE",
-      300: "#7E7CFD",
-      400: "#524FFD",
-      500: "#2522FC",
-      600: "#0703E2",
-      700: "#0502AB",
-      800: "#03026F",
-      900: "#020137",
-      950: "#01001E"
+        }),
+        boxShadow: {
+          thick: "0px 7px 32px rgb(0 0 0 / 35%);",
+          inset: "inset 6px 84px 79px -40px hsla(0,0%,100%,.025), inset 0 -4px 1px -3px hsla(0,0%,100%,.25), inset 0 4px 1px -3px hsla(0,0%,100%,.25);",
+        },
+        colors: {
+          black: "#0f1014",
+          ebony: "#1a1c23",
+          mirage: "#27292D",
+           //
+         //black: "#191919",
+          //ebony: "#272727",
+          //mirage: "#333333",
+          blue: {
+            50: "#ECEEFE",
+            100: "#D8DDFD",
+            200: "#ACB7FB",
+            300: "#8695F9",
+            400: "#5F73F7",
+            500: "#364EF5",
+            600: "#0B28E4",
+            700: "#081EAA",
+            800: "#061470",
+            900: "#030A3A",
+            950: "#01051D"
+          },
+        },
+        borderRadius: {
+          "4xl": "2rem",
+          "5xl": "3rem",
+          "6xl": "5rem",
+        },
+        fontFamily: {
+          sans: ["Inter", ...defaultTheme.fontFamily.sans],
         },
       },
-      fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        mono: ["JetBrains Mono", ...defaultTheme.fontFamily.mono],
-      },
     },
-  },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
-  ],
-}
+    plugins: [
+      require('@tailwindcss/forms'),
+      require('@tailwindcss/typography'),
+      require('tailwind-scrollbar-hide')
+    ]
+  }
