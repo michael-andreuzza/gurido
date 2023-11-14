@@ -71,7 +71,13 @@
           },
         },
         backgroundImage: (theme) => ({
-          // Blue Gradient
+          // aquua
+          //gradientdown: "radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#4497cf80 69.27%,#b4dece 100%);",
+          //gradientup: "radial-gradient(131.66% 109.77% at 50% 97.75%, transparent 37.41%,#4497cf80   69.27%,  #b4dece 100%);",
+          // aquua
+          //gradientdown: "radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#4497cf80 69.27%,#b4dece 100%);",
+          //gradientup: "radial-gradient(131.66% 109.77% at 50% 97.75%, transparent 37.41%,#4497cf80   69.27%,  #b4dece 100%);",
+            // Blue Gradient
           gradientdown: "radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#364ef580 69.27%,#6698ff 100%);",
           gradientup: "radial-gradient(131.66% 109.77% at 50% 97.75%, transparent 37.41%,#364ef580   69.27%,  #6698ff 100%);",
 // Monochrome gradient
@@ -91,7 +97,7 @@
          //black: "#191919",
           //ebony: "#272727",
           //mirage: "#333333",
-          blue: {
+          accent: {
             50: "#ECEEFE",
             100: "#D8DDFD",
             200: "#ACB7FB",
@@ -104,6 +110,7 @@
             900: "#030A3A",
             950: "#01051D"
           },
+
         },
         borderRadius: {
           "4xl": "2rem",
@@ -111,6 +118,7 @@
           "6xl": "5rem",
         },
         fontFamily: {
+          display: ["Power Grotesk", ...defaultTheme.fontFamily.sans],
           sans: ["Inter", ...defaultTheme.fontFamily.sans],
         },
       },

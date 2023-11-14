@@ -1,0 +1,59 @@
+---
+import { work } from "../../data/work.json";
+---
+
+<section class="lg:p-8 overflow-hidden relative">
+  <div
+    class="mx-auto 2xl:max-w-7xl py-24 lg:px-16 md:px-12 px-8 xl:px-36 items-center lg:py-48 relative w-full bg-gradientup rounded-[3rem]"
+  >
+    <div class="max-w-3xl mx-auto">
+      <h2
+        class="text-3xl tracking-tighter mt-6 font-light lg:text-4xl text-white"
+      >
+        More work
+      </h2>
+      <div
+        class="divide-y divide-white/10  border-y border-white/10 mt-12"
+      >
+        {
+          work.map((template) => (
+            <>
+              <div class="py-4 flex flex-col sm:flex-row justify-between gap-4 lg:items-end">
+                <div>
+                  <p class="font-medium leading-6 text-white ">
+                    {template.title}
+                  </p>
+                  <p class="text-xs text-zinc-400 mt-2">{template.description}</p>
+                </div>
+                <div class="lg:ml-auto">
+                  <a
+                    href={template.url}
+                    class="bg-white/5 duration-300 hover:bg-white/10 focus:bg-transparent rounded-full inline-flex items-center text-center text-white p-4 ring-1 ring-white/10 w-12 h-12"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-arrow-narrow-right w-4 h-4"
+
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" />
+                      <path d="M15 16l4 -4" />
+                      <path d="M15 8l4 4" />
+                    </svg>
+                  </a>
+
+                </div>
+              </div>
+            </>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
