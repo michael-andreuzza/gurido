@@ -1,49 +1,45 @@
 <div class="fixed top-4 inset-x-0 z-50">
-  <div class="lg:max-w-2xl mx-auto px-8">
+  <div class="lg:max-w-xl mx-auto px-8">
     <div class="w-full mx-auto">
       <div
         x-data="{ open: false }"
-        class="relative flex flex-col w-full p-3 mx-auto bg-black/70 border border-white/10 shadow-thick backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row md:px-6">
+        class="relative flex flex-col w-full p-3 mx-auto bg-black/70 ring-1 ring-inset ring-white/10 shadow-thick backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row md:px-6"
+      >
         <div
-          class="flex flex-row items-center justify-between md:justify-start">
+          class="flex flex-row items-center justify-between md:justify-start"
+        >
           <a
-            class="text-white hover:text-white/50 items-center font-bold gap-3 inline-flex text-sm"
-            href="/">
-            <svg
-              class="h-6"
-              viewBox="0 0 92 93"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M33.263 19.8878C35.5755 32.2097 45.8661 46.1978 45.8661 46.1978C45.8661 46.1978 57.2841 30.6774 58.7685 17.9323C58.979 16.9071 59.09 15.841 59.09 14.7466C59.09 6.7196 53.1162 0.212402 45.7471 0.212402C38.378 0.212402 32.4042 6.7196 32.4042 14.7466C32.4042 16.5567 32.708 18.2895 33.263 19.8878ZM45.8507 46.2191C44.3889 45.1646 31.2923 35.8942 19.6762 33.7139C18.0776 33.1587 16.3446 32.8549 14.5342 32.8549C6.5072 32.8549 0 38.8287 0 46.1978C0 53.5668 6.5072 59.5407 14.5342 59.5407C15.6281 59.5407 16.6938 59.4297 17.7186 59.2194C29.2251 57.8799 42.9944 48.4428 45.5623 46.6209C43.7404 49.1889 34.3041 62.9571 32.964 74.4632C32.7535 75.4884 32.6425 76.5545 32.6425 77.6489C32.6425 85.6759 38.6163 92.1831 45.9854 92.1831C53.3545 92.1831 59.3283 85.6759 59.3283 77.6489C59.3283 75.8388 59.0245 74.106 58.4695 72.5077C56.3939 61.4479 47.8908 49.0459 46.1706 46.6212C48.7396 48.4438 62.508 57.88 74.0139 59.2194C75.0387 59.4297 76.1043 59.5407 77.1982 59.5407C85.2253 59.5407 91.7325 53.5668 91.7325 46.1978C91.7325 38.8287 85.2253 32.8549 77.1982 32.8549C75.3879 32.8549 73.6548 33.1587 72.0563 33.7139C60.4405 35.8942 47.3444 45.164 45.8819 46.219C45.8716 46.2049 45.8663 46.1978 45.8663 46.1978C45.8663 46.1978 45.8611 46.2049 45.8507 46.2191Z"
-                fill="currentColor"></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M33.263 19.8878C35.5755 32.2097 45.8661 46.1978 45.8661 46.1978C45.8661 46.1978 57.2841 30.6774 58.7685 17.9323C58.979 16.9071 59.09 15.841 59.09 14.7466C59.09 6.7196 53.1162 0.212402 45.7471 0.212402C38.378 0.212402 32.4042 6.7196 32.4042 14.7466C32.4042 16.5567 32.708 18.2895 33.263 19.8878ZM45.8507 46.2191C44.3889 45.1646 31.2923 35.8942 19.6762 33.7139C18.0776 33.1587 16.3446 32.8549 14.5342 32.8549C6.5072 32.8549 0 38.8287 0 46.1978C0 53.5668 6.5072 59.5407 14.5342 59.5407C15.6281 59.5407 16.6938 59.4297 17.7186 59.2194C29.2251 57.8799 42.9944 48.4428 45.5623 46.6209C43.7404 49.1889 34.3041 62.9571 32.964 74.4632C32.7535 75.4884 32.6425 76.5545 32.6425 77.6489C32.6425 85.6759 38.6163 92.1831 45.9854 92.1831C53.3545 92.1831 59.3283 85.6759 59.3283 77.6489C59.3283 75.8388 59.0245 74.106 58.4695 72.5077C56.3939 61.4479 47.8908 49.0459 46.1706 46.6212C48.7396 48.4438 62.508 57.88 74.0139 59.2194C75.0387 59.4297 76.1043 59.5407 77.1982 59.5407C85.2253 59.5407 91.7325 53.5668 91.7325 46.1978C91.7325 38.8287 85.2253 32.8549 77.1982 32.8549C75.3879 32.8549 73.6548 33.1587 72.0563 33.7139C60.4405 35.8942 47.3444 45.164 45.8819 46.219C45.8716 46.2049 45.8663 46.1978 45.8663 46.1978C45.8663 46.1978 45.8611 46.2049 45.8507 46.2191Z"
-                fill="currentColor"
-                fill-opacity="0.2"></path>
+            class="text-white hover:text-white/50 items-center  gap-3 inline-flex italic font-black uppercase text-sm"
+            href="/"
+          >
+          <svg class="w-5 h-5" viewBox="0 0 109 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="50" y="2.18005" width="9.45" height="39.785" fill="white"/>
+            <circle cx="54.5" cy="54.5" r="49.02" stroke="white" stroke-width="10.96"/>
             </svg>
 
-            <span>Agency</span>
+
+
+
+            <span>NeuePower</span>
           </a>
           <button
             @click="open = !open"
-            class="inline-flex items-center justify-center p-2 text-zinc-400 hover:text-accent-300 focus:outline-none focus:text-white md:hidden">
+            class="inline-flex items-center justify-center p-2 text-zinc-400 hover:text-accent-300 focus:outline-none focus:text-white md:hidden"
+          >
             <svg
               class="w-6 h-6"
               stroke="currentColor"
               fill="none"
-              viewBox="0 0 24 24">
+              viewBox="0 0 24 24"
+            >
               <path
                 :class="{'hidden': open, 'inline-flex': !open }"
                 class="inline-flex"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16">
+                d="M4 6h16M4 12h16M4 18h16"
+              >
               </path>
               <path
                 :class="{'hidden': !open, 'inline-flex': open }"
@@ -51,53 +47,31 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M6 18L18 6M6 6l12 12">
+                d="M6 18L18 6M6 6l12 12"
+              >
               </path>
             </svg>
           </button>
         </div>
         <nav
           :class="{'flex': open, 'hidden': !open}"
-          class="flex-col flex-grow hidden py-12 md:py-0 md:flex md:items-end justify-center md:flex-row">
+          class="flex-col flex-grow hidden py-12 md:py-0 md:flex md:items-end justify-center md:flex-row"
+        >
           <ul
-            class="space-y-2 list-none text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6">
+            class="space-y-2 list-none text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6"
+          >
             <li>
-              <a
-                href="#how"
-                class=" hover:text-accent-400">
-                How it works
-              </a>
+              <a href="#work" class="hover:text-accent-400"> Work</a>
             </li>
             <li>
-              <a
-                href="#services"
-                class=" hover:text-accent-400">
-                Services
-              </a>
+              <a href="#how" class="hover:text-accent-400"> How it works</a>
             </li>
             <li>
-              <a
-              href="#work"
-              class=" hover:text-accent-400">
-              Work
-            </a>
-          </li>
-          <li>
-            <a
-              href="#pricing"
-              class=" hover:text-accent-400">
-              Pricing
-            </a>
-          </li>
-             <li>
-              <a
-                href="#faq"
-                class=" hover:text-accent-400">
-                Faq
-              </a>
+              <a href="#pricing" class="hover:text-accent-400"> Pricing</a>
             </li>
-
-
+            <li>
+              <a href="#faq" class="hover:text-accent-400"> Faq</a>
+            </li>
           </ul>
         </nav>
       </div>

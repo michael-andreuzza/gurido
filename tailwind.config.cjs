@@ -71,18 +71,13 @@
           },
         },
         backgroundImage: (theme) => ({
-          // aquua
-          //gradientdown: "radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#4497cf80 69.27%,#b4dece 100%);",
-          //gradientup: "radial-gradient(131.66% 109.77% at 50% 97.75%, transparent 37.41%,#4497cf80   69.27%,  #b4dece 100%);",
-          // aquua
-          //gradientdown: "radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#4497cf80 69.27%,#b4dece 100%);",
-          //gradientup: "radial-gradient(131.66% 109.77% at 50% 97.75%, transparent 37.41%,#4497cf80   69.27%,  #b4dece 100%);",
+
             // Blue Gradient
           gradientdown: "radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#364ef580 69.27%,#6698ff 100%);",
           gradientup: "radial-gradient(131.66% 109.77% at 50% 97.75%, transparent 37.41%,#364ef580   69.27%,  #6698ff 100%);",
 // Monochrome gradient
-          //gradientdown: "radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#33333380 69.27%,#686868 100%);",
-          //gradientup: "radial-gradient(131.66% 109.77% at 50% 97.75%, transparent 37.41%,#33333380   69.27%,  #686868 100%);",
+          grayGradientdown: "radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#33333380 69.27%,#555555 100%);",
+          grayGradientup: "radial-gradient(131.66% 109.77% at 50% 97.75%, transparent 37.41%,#33333380   69.27%,  #555555 100%);",
 
         }),
         boxShadow: {
@@ -118,7 +113,7 @@
           "6xl": "5rem",
         },
         fontFamily: {
-          display: ["Power Grotesk", ...defaultTheme.fontFamily.sans],
+          display: ["Neue Power", ...defaultTheme.fontFamily.sans],
           sans: ["Inter", ...defaultTheme.fontFamily.sans],
         },
       },
