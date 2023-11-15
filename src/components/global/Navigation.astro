@@ -3,23 +3,30 @@
     <div class="w-full mx-auto">
       <div
         x-data="{ open: false }"
-        class="relative flex flex-col w-full p-3 mx-auto bg-black/70 ring-1 ring-inset ring-white/10 shadow-thick backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row md:px-6"
+        class="relative flex flex-col w-full p-3 mx-auto bg-black/70 ring-1 ring-inset ring-white/10 shadow-thick backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row"
       >
         <div
           class="flex flex-row items-center justify-between md:justify-start"
         >
           <a
-            class="text-white hover:text-white/50 items-center  gap-3 inline-flex italic font-black uppercase text-sm"
+            class="text-white hover:text-white/50 items-center gap-3 inline-flex italic font-black uppercase text-sm"
             href="/"
           >
-          <svg class="w-5 h-5" viewBox="0 0 109 109" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="50" y="2.18005" width="9.45" height="39.785" fill="white"/>
-            <circle cx="54.5" cy="54.5" r="49.02" stroke="white" stroke-width="10.96"/>
+            <svg
+              class="w-8 h-8"
+              viewBox="0 0 109 109"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="50" y="2.18005" width="9.45" height="39.785" fill="white"
+              ></rect>
+              <circle
+                cx="54.5"
+                cy="54.5"
+                r="49.02"
+                stroke="white"
+                stroke-width="10.96"></circle>
             </svg>
-
-
-
-
             <span>NeuePower</span>
           </a>
           <button
@@ -72,8 +79,13 @@
             <li>
               <a href="#faq" class="hover:text-accent-400"> Faq</a>
             </li>
-             <li>
-              <a href="https://app.neuepower.com/sign-in" class="text-sm py-2 w-full px-4 border h-8 focus:ring-2 rounded-full border-transparent bg-white/5 hover:bg-transparent text-white duration-200 focus:ring-offset-2 focus:ring-white hover:text-white inline-flex items-center justify-center ring-1 ring-white/10"> Log in</a>
+            <li>
+              <a
+                href="https://app.neuepower.com/sign-in"
+                class="text-sm py-2 w-auto px-4 border h-8 focus:ring-2 rounded-full border-transparent bg-white/5 hover:bg-transparent text-white duration-200 focus:ring-offset-2 focus:ring-white hover:text-white inline-flex items-center justify-center ring-1 ring-white/10"
+              >
+                Log in</a
+              >
             </li>
           </ul>
         </nav>
