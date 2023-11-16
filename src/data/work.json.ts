@@ -66,12 +66,7 @@ export interface Template {
   };
   export const byName = {
     workTwo,
-    workOne,
-    workNine,
-    workThree,
-    workfour,
-    workfive,
-    worksix,
+
     workseven,
     workTen,
     workeight,
