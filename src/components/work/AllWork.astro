@@ -12,9 +12,7 @@ import { work } from "../../data/work.json";
       >
         Selected work
       </h2>
-      <div
-        class="divide-y divide-white/10  border-y border-white/10 mt-12"
-      >
+      <div class="divide-y divide-white/10 border-y border-white/10 mt-12">
         {
           work.map((template) => (
             <>
@@ -23,7 +21,12 @@ import { work } from "../../data/work.json";
                   <p class="font-medium leading-6 text-white ">
                     {template.title}
                   </p>
-                  <p class="text-xs text-zinc-400 mt-2">{template.description}</p>
+                  <p class="text-xs text-zinc-400 mt-2">
+                    {template.description}
+                  </p>
+                  <div class="flex items-center gap-2 mt-4">
+                    <p class="text-xs text-white">{template.type}</p>
+                  </div>
                 </div>
                 <div class="lg:ml-auto">
                   <a
@@ -33,7 +36,6 @@ import { work } from "../../data/work.json";
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="icon icon-tabler icon-tabler-arrow-narrow-right w-4 h-4"
-
                       viewBox="0 0 24 24"
                       stroke-width="2"
                       stroke="currentColor"
@@ -47,7 +49,6 @@ import { work } from "../../data/work.json";
                       <path d="M15 8l4 4" />
                     </svg>
                   </a>
-
                 </div>
               </div>
             </>
