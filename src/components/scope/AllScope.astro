@@ -1,0 +1,57 @@
+---
+import { designwork } from "../../data/designwork.json";
+import { devwork } from "../../data/devwork.json";
+---
+
+<section class="lg:p-8 overflow-hidden relative">
+  <div
+    class="mx-auto 2xl:max-w-7xl py-24 lg:px-16 md:px-12 px-8 xl:px-36 items-center lg:py-48 relative w-full bg-gradientup rounded-[3rem]"
+  >
+    <div class="max-w-3xl mx-auto">
+      <h2
+        class="text-3xl tracking-tighter mt-6 font-light lg:text-4xl text-white"
+      >
+        Exploring a diverse range of comprehensive <span
+          class="md:block text-zinc-400"
+          >services to elevate your brand presence
+        </span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 mt-12">
+        <div>
+          <p class="text-2xl text-white">Design</p>
+          <div class="divide-y mt-6 divide-white/10 border-y border-white/10">
+            {
+              designwork.map((template) => (
+                <>
+                  <div class="py-4 flex flex-col sm:flex-row justify-between gap-4 lg:items-end">
+                    <p class="font-medium leading-6 text-white ">
+                      {template.title}
+                    </p>
+
+                  </div>
+                </>
+              ))
+            }
+          </div>
+        </div>
+        <div>
+          <p class="text-2xl text-white">Development</p>
+          <div class="divide-y divide-white/10 mt-6 border-y border-white/10">
+            {
+              designwork.map((template) => (
+                <>
+                  <div class="py-4 flex flex-col sm:flex-row justify-between gap-4 lg:items-end">
+                    <p class="font-medium leading-6 text-white ">
+                      {template.title}
+                    </p>
+
+                  </div>
+                </>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

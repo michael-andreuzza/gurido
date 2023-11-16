@@ -85,7 +85,7 @@
           inset: "inset 6px 84px 79px -40px hsla(0,0%,100%,.025), inset 0 -4px 1px -3px hsla(0,0%,100%,.25), inset 0 4px 1px -3px hsla(0,0%,100%,.25);",
         },
         colors: {
-          black: "#0f1014",
+            black: "#0f1014",
           ebony: "#1a1c23",
           mirage: "#27292D",
            //
@@ -113,7 +113,7 @@
           "6xl": "5rem",
         },
         fontFamily: {
-          display: ["Neue Power", ...defaultTheme.fontFamily.sans],
+          display: ["Polysans", ...defaultTheme.fontFamily.sans],
           sans: ["Inter", ...defaultTheme.fontFamily.sans],
         },
       },
