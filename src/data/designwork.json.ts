@@ -5,7 +5,6 @@ export const byName: string[] = [
     "Landing pages",
     "Full website",
     "Open Graphs",
-    "Business Cards",
     "Social media assets",
   ];
 
