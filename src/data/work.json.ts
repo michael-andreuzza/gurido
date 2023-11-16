@@ -28,10 +28,17 @@ export interface Template {
     type: "Design & Development",
     title: "Landing page for Wicked Backgrounds",
   };
+  const beforeafter: Template = {
+    url: "https://www.figma.com/community/file/1191635037971766859/before-after",
+    description: "Redesigns",
+    type: "Design & Development",
+    title: "2023 100+ Redesigns of components headers",
+  };
   export const byName = {
     lexington,
     bal,
     backgrounds,
     dojo,
+    beforeafter,
   };
   export const work = Object.values(byName);
