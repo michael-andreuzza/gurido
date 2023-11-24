@@ -113,8 +113,8 @@
           "6xl": "5rem",
         },
         fontFamily: {
-          display: ["Polysans", ...defaultTheme.fontFamily.sans],
-          sans: ["Inter", ...defaultTheme.fontFamily.sans],
+
+          sans: ["Atipla ND", ...defaultTheme.fontFamily.sans],
         },
       },
     },

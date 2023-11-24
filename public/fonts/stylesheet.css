@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'Atipla ND Book';
+    src: local('Atipla ND Book'), local('AtiplaND-Book'),
+        url('fonts/atipla/AtiplaND-Book.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Medium'), local('AtiplaND-Medium'),
+        url('fonts/atipla/AtiplaND-Medium.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Bold'), local('AtiplaND-Bold'),
+        url('fonts/atipla/AtiplaND-Bold.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Black'), local('AtiplaND-Black'),
+        url('fonts/atipla/AtiplaND-Black.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Regular'), local('AtiplaND-Regular'),
+        url('fonts/atipla/AtiplaND-Regular.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Semibold'), local('AtiplaND-Semibold'),
+        url('fonts/atipla/AtiplaND-Semibold.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Bold'), local('AtiplaND-Bold'),
+        url('fonts/atipla/AtiplaND-Bold.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND Book';
+    src: local('Atipla ND Book'), local('AtiplaND-Book'),
+        url('fonts/atipla/AtiplaND-Book.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Regular'), local('AtiplaND-Regular'),
+        url('fonts/atipla/AtiplaND-Regular.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Semibold'), local('AtiplaND-Semibold'),
+        url('fonts/atipla/AtiplaND-Semibold.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Black'), local('AtiplaND-Black'),
+        url('fonts/atipla/AtiplaND-Black.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Medium'), local('AtiplaND-Medium'),
+        url('fonts/atipla/AtiplaND-Medium.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Bold'), local('AtiplaND-Bold'),
+        url('fonts/atipla/AtiplaND-Bold.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Black'), local('AtiplaND-Black'),
+        url('fonts/atipla/AtiplaND-Black.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Bold'), local('AtiplaND-Bold'),
+        url('fonts/atipla/AtiplaND-Bold.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Regular'), local('AtiplaND-Regular'),
+        url('fonts/atipla/AtiplaND-Regular.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND Book';
+    src: local('Atipla ND Book'), local('AtiplaND-Book'),
+        url('fonts/atipla/AtiplaND-Book.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Semibold'), local('AtiplaND-Semibold'),
+        url('fonts/atipla/AtiplaND-Semibold.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Black'), local('AtiplaND-Black'),
+        url('fonts/atipla/AtiplaND-Black.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Medium'), local('AtiplaND-Medium'),
+        url('fonts/atipla/AtiplaND-Medium.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Regular'), local('AtiplaND-Regular'),
+        url('fonts/atipla/AtiplaND-Regular.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND Book';
+    src: local('Atipla ND Book'), local('AtiplaND-Book'),
+        url('fonts/atipla/AtiplaND-Book.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Medium'), local('AtiplaND-Medium'),
+        url('fonts/atipla/AtiplaND-Medium.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atipla ND';
+    src: local('Atipla ND Semibold'), local('AtiplaND-Semibold'),
+        url('fonts/atipla/AtiplaND-Semibold.woff2') format('woff2'),
+        url('fonts/atipla/AtiplaND-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
