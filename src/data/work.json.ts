@@ -7,7 +7,7 @@ export interface Template {
   const lexington: Template = {
     url: "https://lexingtonthemes.com/",
     description: "Outstanding themes and UI Kits made with Astro & Tailwind CSS",
-    type: "Design & Development",
+    type: "Design & Development landing page and all themes inlcuded.",
     title: "Lexington Themes",
   };
   const bal: Template = {
