@@ -1,5 +1,5 @@
 <section
-  class="md:px-12 sm:px-8 relative  border-zinc-700 scroll-mt-24 2xl:border-x"
+  class="md:px-12 sm:px-8 relative border-zinc-700 scroll-mt-24 2xl:border-x"
   id="faq"
 >
   <div class="border-x border-zinc-700 divide-y divide-zinc-700">
@@ -16,14 +16,11 @@
       <p class="mt-5 text-white">
         Can't find your answer? Send and <a
           class="text-accent-400 hover:text-white duration-200"
-          href="mailto:michael@monomod.studio">email</a
+          href="mailto:michael@andreuzza.com">email</a
         > and Monomod will get back to you .
       </p>
     </div>
-    <div
-
-      x-data="{selected:null}"
-    >
+    <div x-data="{selected:null}">
       <ul class="list-none text-white" role="list" @click="open = !open">
         <li class="relative border-zinc-700 border-b">
           <button
@@ -33,7 +30,7 @@
           >
             <div class="items-center flex justify-between text-white">
               <p class="text-xl tracking-tighter font-light text-white">
-                Why wouldn't I just hire a full-time designer?
+                Who runs the studio?
               </p>
               <svg
                 class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
@@ -54,14 +51,11 @@
             x-ref="container1"
           >
             <div class="text-sm text-zinc-400 lg:text-lg p-8 lg:px-20">
-              Good question! For starters, the annual cost of a full-time
-              senior-level designer now exceeds $100,000, plus benefits (and
-              good luck finding one available). Aside from that, you may not
-              always have enough work to keep them busy at all times, so
-              you're stuck paying for time you aren't able to utilize. With
-              the monthly plan, you can pause and resume your subscription as
-              often as you need to ensure you're only paying your designer
-              when you have work available for them.
+              My name is Michael Andreuzza, UI Designer and Front end Developer.
+              I also build products for myself. Learn more <a
+                class="text-cyan hover:text-white"
+                href="https://michaelandreuzza.com/">here</a
+              >
             </div>
           </div>
         </li><li class="relative border-zinc-700 border-b">
@@ -71,7 +65,7 @@
             type="button"
             ><div class="items-center flex justify-between text-white">
               <p class="text-xl tracking-tighter font-light text-white">
-                Is there a limit to how many requests I can have?
+                How do we communicate and manage the project?
               </p><svg
                 class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
                 fill="currentColor"
@@ -91,8 +85,8 @@
             x-ref="container2"
           >
             <div class="text-sm text-zinc-400 lg:text-lg p-8 lg:px-20">
-              Once subscribed, you're able to add as many design requests to
-              your queue as you'd like, and they will be delivered one by one.
+              Monomod uses Breeew for project management, ensuring seamless
+              communication and collaboration.
             </div>
           </div>
         </li><li class="relative border-zinc-700 border-b">
@@ -102,7 +96,9 @@
             type="button"
             ><div class="items-center flex justify-between text-white">
               <p class="text-xl tracking-tighter font-light text-white">
-                How fast will I receive my designs?
+                How quickly will I get some work done?
+
+
               </p><svg
                 class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
                 fill="currentColor"
@@ -122,8 +118,8 @@
             x-ref="container2"
           >
             <div class="text-sm text-zinc-400 lg:text-lg p-8 lg:px-20">
-              On average, most requests are completed in just two days or
-              less. However, more complex requests can take longer.
+              Expect the initial concept within 2-3 days, and Monomod will make revisions until it meets your complete satisfaction. For bigger projects it can take up to 4 weeks.
+
             </div>
           </div>
         </li><li class="relative border-zinc-700 border-b">
@@ -133,7 +129,9 @@
             type="button"
             ><div class="items-center flex justify-between text-white">
               <p class="text-xl tracking-tighter font-light text-white">
-                Who are the designers?
+                Why do you only have two spots ?
+
+
               </p><svg
                 class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
                 fill="currentColor"
@@ -153,20 +151,21 @@
             x-ref="container2"
           >
             <div class="text-sm text-zinc-400 lg:text-lg p-8 lg:px-20">
-              You might be surprised to hear this, but Dusk is actually an
-              agency of one. This means you'll work directly with me, founder
-              of Dusk. However, power-ups requests such as animations or
-              custom illustrations are provided by partner designers.
+              Monomod believes in providing the best possible service to clients, and to ensure that, Monomod has decided to limit the workload to just two projects at a time. This approach allows Monomod to dedicate it's full attention and expertise to each project, ensuring quality and timely delivery.
+
             </div>
           </div>
-        </li><li class="relative border-zinc-700 border-b">
+        </li>
+        <li class="relative border-zinc-700 border-b">
           <button
             class="w-full p-8 lg:px-20 text-left"
             @click="selected !== 5 ? selected = 5 : selected = null"
             type="button"
             ><div class="items-center flex justify-between text-white">
               <p class="text-xl tracking-tighter font-light text-white">
-                How does the pause feature work?
+                What if i don't like the design?
+
+
               </p><svg
                 class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
                 fill="currentColor"
@@ -186,19 +185,51 @@
             x-ref="container2"
           >
             <div class="text-sm text-zinc-400 lg:text-lg p-8 lg:px-20">
-              We understand you may not have enough design work to fill up
-              entire month. Perhaps you only have one or two design requests
-              at the moment. That's where pausing your subscription comes in
-              handy. Billing cycles are based on 31 day period. Let's say you
-              sign up and use the service for 21 days, and then decide to
-              pause your subscription. This means that the billing cycle will
-              be paused and you'll have 10 days of service remaining to be
-              used anytime in the future.
+              Monomod wants you to be happy with the results! Hence the unlimited requests.
+
+            </div>
+          </div>
+        </li>
+          <li class="relative border-zinc-700 border-b">
+          <button
+            class="w-full p-8 lg:px-20 text-left"
+            @click="selected !== 6 ? selected = 6 : selected = null"
+            type="button"
+            ><div class="items-center flex justify-between text-white">
+              <p class="text-xl tracking-tighter font-light text-white">
+                Are there any refunds?
+
+
+
+              </p><svg
+                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                :class="{'rotate-180': open, 'rotate-0': !open}"
+                ><path
+                  d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"></path></svg
+              >
+            </div></button
+          ><div
+            class="relative overflow-hidden duration-700 max-h-0 transition-all"
+            style=""
+            x-bind:style="selected == 6 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
+            x-ref="container2"
+          >
+            <div class="text-sm text-zinc-400 lg:text-lg p-8 lg:px-20">
+              Unfortunately, not. Because of the intense creative demands for delivering top-notch design and development within tight timeframes and the thorough research invested to achieve the best outcomes, Monomod's cannot provide our services without compensation.
+
+              <br><br>
+              However, we understand the importance of client satisfaction. If, after our initial discussion, it turns out that our services do not align with your needs and no work has been initiated, rest assured that you are eligible for a 100% refund. Monomod value transparency and want our clients to feel confident in their interactions with Monomod's.
+
+
             </div>
           </div>
         </li>
       </ul>
     </div>
-
   </div>
 </section>
