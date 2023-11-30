@@ -3,24 +3,40 @@ import { designwork } from "../../data/designwork.json";
 import { devwork } from "../../data/devwork.json";
 ---
 
-<section class="lg:p-8 scroll-mt-24" id="services">
-  <div
-    class="mx-auto 2xl:max-w-7xl py-12 lg:px-16 md:px-12 px-8 xl:px-40 items-center w-full "
-  >
-    <h2 class="text-3xl tracking-tighter font-light lg:text-4xl text-white">
-      Exploring a diverse range of comprehensive <span
-        class="md:block text-zinc-400"
-        >services to elevate your brand presence
-      </span>
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 mt-12">
-      <div>
-        <p class="text-2xl text-white">Design</p>
-        <div class="divide-y mt-6 divide-white/10 border-y border-white/10">
+<section
+  class="md:px-12 sm:px-8 relative border-b border-zinc-700 scroll-mt-24 2xl:border-x"
+  id="services"
+>
+  <div class="border-x border-zinc-700 divide-y divide-zinc-700">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-zinc-700   gap-px  lg:rounded-[3rem] overflow-hidden ring-1 ring-zinc-700"
+    >
+      <div
+        class="lg:p-px col-span-full lg:col-span-2   bg-gradientBottomLeft overflow-hidden"
+      >
+        <div
+          class="bg-black/80 ring-1 w-full lg:rounded-[3rem] lg:rounded-r-none h-full items-center inline-flex text-black ring-white/5 ring-inset  backdrop-blur-2xl p-8 lg:px-20"
+        >
+          <h2
+            class="text-3xl tracking-tighter font-light lg:text-6xl text-white"
+          >
+            Exploring a diverse range of  <span
+              >services to elevate your brand presence
+            </span>
+          </h2>
+        </div>
+      </div>
+      <div class="bg-black">
+        <div
+          class="p-8 inline-flex items-center border-b w-full border-white/10"
+        >
+          <p class="text-2xl text-white">Design</p>
+        </div>
+        <div class="divide-y divide-white/10">
           {
             designwork.map((template) => (
               <>
-                <div class="py-2 flex flex-col sm:flex-row justify-between gap-4 lg:items-end">
+                <div class="px-8  py-4 flex flex-col sm:flex-row justify-between gap-4 lg:items-end">
                   <p class="font-medium leading-6 text-white text-sm flex gap-2 items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -49,13 +65,17 @@ import { devwork } from "../../data/devwork.json";
           }
         </div>
       </div>
-      <div>
-        <p class="text-2xl text-white">Development</p>
-        <div class="divide-y divide-white/10 mt-6 border-y border-white/10">
+      <div class="bg-black">
+        <div
+          class="p-8 inline-flex items-center border-b w-full border-white/10"
+        >
+          <p class="text-2xl text-white">Development</p>
+        </div>
+        <div class="divide-y divide-white/10">
           {
             devwork.map((template) => (
               <>
-                <div class="py-2 flex flex-col sm:flex-row justify-between gap-4 lg:items-end">
+                <div class="px-8  py-4 flex flex-col sm:flex-row justify-between gap-4 lg:items-end">
                   <p class="font-medium leading-6 text-white text-sm flex gap-2 items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
