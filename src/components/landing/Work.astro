@@ -1,90 +1,167 @@
-<section
-  class="md:px-12 sm:px-8 relative border-b border-zinc-700 scroll-mt-24 2xl:border-x"
-  id="work"
->
-  <div class="border-x border-zinc-700">
-    <div class="mx-auto 2xl:max-w-7xl items-center w-full">
+<section class="scroll-mt-24" id="work">
+  
+  <div class="px-8 md:px-12 py-24 max-w-2xl mx-auto">
+    <h2 class="text-xl tracking-tighter font-light text-black">
+      Some of MONOMODS work.
+    </h2>
+
+    <div
+      class="flex flex-col w-full"
+      x-data="{
+      skip: 1,
+      atBeginning: false,
+      atEnd: false,
+      next() {
+          this.to((current, offset) => current + (offset * this.skip))
+      },
+      prev() {
+          this.to((current, offset) => current - (offset * this.skip))
+      },
+      to(strategy) {
+          let slider = this.$refs.slider
+          let current = slider.scrollLeft
+          let offset = slider.firstElementChild.getBoundingClientRect().width
+          slider.scrollTo({ left: strategy(current, offset), behavior: 'smooth' })
+      },
+      focusableWhenVisible: {
+          'x-intersect:enter'() {
+              this.$el.removeAttribute('tabindex')
+          },
+          'x-intersect:leave'() {
+              this.$el.setAttribute('tabindex', '-1')
+          },
+      },
+      disableNextAndPreviousButtons: {
+          'x-intersect:enter.threshold.05'() {
+              let slideEls = this.$el.parentElement.children
+              // If this is the first slide.
+              if (slideEls[0] === this.$el) {
+                  this.atBeginning = true
+              // If this is the last slide.
+              } else if (slideEls[slideEls.length-1] === this.$el) {
+                  this.atEnd = true
+              }
+          },
+          'x-intersect:leave.threshold.05'() {
+              let slideEls = this.$el.parentElement.children
+              // If this is the first slide.
+              if (slideEls[0] === this.$el) {
+                  this.atBeginning = false
+              // If this is the last slide.
+              } else if (slideEls[slideEls.length-1] === this.$el) {
+                  this.atEnd = false
+              }
+          },
+      },
+  }"
+    >
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:items-center divide-y lg:divide-y-0 lg:divide-x divide-zinc-700"
+        class="flex flex-col w-full bg-white rounded-3xl pt-4  mt-4"
+        aria-labelledby="carousel-label"
+        role="region"
+        tabindex="0"
+        x-on:keydown.left="prev"
+        x-on:keydown.right="next"
       >
-        <div class="p-8 lg:px-24">
-          <h2
-            class="text-3xl tracking-tighter font-light lg:text-4xl text-white"
+        <h2 class="sr-only" hidden="" id="carousel-label">Carousel</h2><span
+          class="sr-only"
+          hidden=""
+          id="carousel-content-label">Carousel</span
+        >
+        <div class="items-center justify-center inline-flex mx-auto space-x-2">
+          <button
+            class="bg-zinc-200 hover:bg-zinc-200 focus:bg-zinc-50 rounded-lg inline-flex items-center text-center text-black p-2 ring-1 ring-zinc-300"
+            :class="{ 'opacity-50 cursor-not-allowed': atBeginning }"
+            :aria-disabled="atBeginning"
+            :tabindex="atEnd ? -1 : 0"
+            x-on:click="prev"
+            tabindex="0"
+            ><span aria-hidden="true"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-3 w-3"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 19l-7-7 7-7"></path>
+              </svg>
+            </span><span class="sr-only">Skip to previous slide page</span
+            ></button
           >
-            Recent projects
-          </h2><p class="mt-5 text-white">
-            Presenting a snapshot of <span>my most recent work.</span>
-          </p>
-        </div>
-        <div class="h-full flex  w-full duration-200">
-          <a
-            href="/all-work"
-            class="items-center inline-flex mx-auto  p-8 lg:px-24 w-full justify-between rounded-4xl h-full text-3xl tracking-tighter hover:bg-gradientTopRight font-light lg:text-4xl text-white hover:bg-white"
-            >See more work <span aria-hidden="true">→</span></a
+          <button
+            class="bg-zinc-200 hover:bg-zinc-200 focus:bg-zinc-50 rounded-lg inline-flex items-center text-center text-black p-2 ring-1 ring-zinc-300"
+            :class="{ 'opacity-50 cursor-not-allowed': atEnd }"
+            :aria-disabled="atEnd"
+            :tabindex="atEnd ? -1 : 0"
+            x-on:click="next"
+            tabindex="0"
+            ><span aria-hidden="true"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-3 w-3 text-zinc-600 hover:text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"></path>
+              </svg>
+            </span><span class="sr-only">Skip to next slide page</span></button
           >
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section
-  class="md:px-12 sm:px-8 relative border-b border-zinc-700 scroll-mt-24 2xl:border-x"
->
-  <div class="border-x border-zinc-700">
-    <div class="grid grid-cols-1 list-none md:grid-cols-3 gap-px bg-zinc-700">
-      <div
-        class="h-full pb-0 overflow-hidden bg-black flex flex-col justify-between"
-      >
-        <div class="p-8 lg:px-24  overflow-hidden">
-          <p
-            class="inline-flex items-center justify-center gap-2 rounded-full px-3 py-1 text-xs leading-6 text-white ring-1 ring-zinc-700 shadow-inset ring-inset"
+
+        <div
+          class="flex gap-3 overflow-x-scroll scrollbar-hide snap-mandatory snap-x w-full"
+          role="listbox"
+          aria-labelledby="carousel-content-label"
+          tabindex="0"
+          x-ref="slider"
+        >
+          <div
+            class="items-center justify-center w-full flex flex-col shrink-0 snap-start"
+            role="option"
+            x-bind="disableNextAndPreviousButtons"
           >
-            Design - Development
-          </p>
-          <h2 class="text-xl mt-4 tracking-tighter font-medium text-white">
-            Screens for Tails
-          </h2>
-          <p class="mt-1 text-sm text-zinc-400">
-            Tailwind Page Builder and Component Library
-          </p>
-        </div>
-        <img class="" src="/tailsPage.png" alt="" />
-      </div>
-      <div
-        class="h-full pb-0 overflow-hidden bg-black flex flex-col justify-between"
-      >
-        <div class="p-8 lg:px-24  overflow-hidden">
-          <p
-            class="inline-flex items-center justify-center gap-2 rounded-full px-3 py-1 text-xs leading-6 text-white ring-1 ring-zinc-700 shadow-inset ring-inset"
+            <img src="/alfred.png" alt="" />
+          </div>
+          <div
+            class="items-center justify-center w-full flex flex-col shrink-0 snap-start"
+            role="option"
+            x-bind="disableNextAndPreviousButtons"
           >
-            Design - Development
-          </p>
-          <h2 class="text-xl mt-4 tracking-tighter font-medium text-white">
-            Wicked Backgrounds
-          </h2>
-          <p class="mt-1 text-sm text-zinc-400">
-            Create beautiful SVG backgrounds for your designs.
-          </p>
-        </div>
-        <img class="" src="/balPage.png" alt="" />
-      </div>
-      <div
-        class="h-full pb-0 overflow-hidden bg-black flex flex-col justify-between"
-      >
-        <div class="p-8 lg:px-24  overflow-hidden">
-          <p
-            class="inline-flex items-center justify-center gap-2 rounded-full px-3 py-1 text-xs leading-6 text-white ring-1 ring-zinc-700 shadow-inset ring-inset"
+            <img src="/navy.png" alt="" />
+          </div>
+          <div
+            class="items-center justify-center w-full flex flex-col
+          shrink-0 snap-start"
+            role="option"
+            x-bind="disableNextAndPreviousButtons"
           >
-            Design
-          </p>
-          <h2 class="text-xl mt-4 tracking-tighter font-medium text-white">
-            Built At lightspeed
-          </h2>
-          <p class="mt-1 text-sm text-zinc-400">
-            A directory of 4000+ templates & UI kits.
-          </p>
+            <img src="/riflesso.png" alt="" />
+          </div>
+           <div
+            class="items-center justify-center w-full flex flex-col
+          shrink-0 snap-start"
+            role="option"
+            x-bind="disableNextAndPreviousButtons"
+          >
+            <img src="/bal.png" alt="" />
+          </div>
+           <div
+            class="items-center justify-center w-full flex flex-col
+          shrink-0 snap-start"
+            role="option"
+            x-bind="disableNextAndPreviousButtons"
+          >
+            <img src="/wb.png" alt="" />
+          </div>
         </div>
-        <img class="" src="/wbPage.png" alt="" />
       </div>
     </div>
   </div>
