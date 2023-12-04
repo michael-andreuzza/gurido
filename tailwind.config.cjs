@@ -72,11 +72,11 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         gradientTopRight:
-          "linear-gradient(229.7deg,#fdfdfe 14.85%,#ffbb88 20.61%,#ff7cba 26.17%,#887bff 31.93%,#03c7f6 46.54%,#0F1014 54.36%)",
+          "linear-gradient(229.7deg,#fdfdfe 24.85%,#ffbb88 30.61%,#ff7cba 36.17%,#887bff 41.93%,#03c7f6 6.54%,#fff 54.36%)",
           gradientBottomLeft:
           "linear-gradient(47deg, #FDFDFE 10.68%, #FB8 17.61%, #FF7CBA 24.3%, #887BFF 31.23%, #03C7F6 48.82%, #0F1014 58.23%)",
           gradientToTop:
-          "linear-gradient(0deg, #FFF -2.39%, #FB8 7.4%, #FF7CBA 16.83%, #887BFF 26.61%, #03C7F6 51.42%, #0F1014 64.69%)",
+          "linear-gradient(0deg, #FFF -3.39%, #FB8 8.4%, #FF7CBA 26.83%, #887BFF 36.61%, #03C7F6 41.42%, #ffffff 94.69%)",
       }),
       boxShadow: {
         thick: "0px 7px 32px rgb(0 0 0 / 35%);",

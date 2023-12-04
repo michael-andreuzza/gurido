@@ -1,18 +1,18 @@
-<div class="fixed top-4 inset-x-0 z-50">
+<div class="fixed top-4 inset-x-0 z-50 ">
   <div class="max-w-xl lg:max-w-2xl mx-auto px-8">
     <div class="w-full mx-auto">
       <div
         x-data="{ open: false }"
-        class="relative flex flex-col w-full p-3 mx-auto bg-black/40 ring-1 ring-inset ring-white/10 shadow-thick backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row"
+        class="relative flex flex-col w-full p-3 mx-auto bg-white ring-1 ring-zinc-200  backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row"
       >
         <div
           class="flex flex-row items-center justify-between md:justify-start"
         >
           <a
-            class="text-white hover:text-white/50 gap-4 items-center tracking-tighter uppercase inline-flex font-medium ml-2 text-sm"
+            class="text-black hover:text-black/50 gap-4 items-center tracking-tighter uppercase inline-flex font-medium ml-2 text-sm"
             href="/"
             ><svg
-              class="h-4 text-white"
+              class="h-4 text-black"
               viewBox="0 0 2030 278"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -26,14 +26,14 @@
                   fill="currentColor"></path></g
               ><defs
                 ><clipPath id="clip0_121_10"
-                  ><rect width="2030" height="277.1" fill="white"
+                  ><rect width="2030" height="277.1" fill="black"
                   ></rect></clipPath
                 ></defs
               ></svg
             ></a
           ><button
             @click="open = !open"
-            class="inline-flex items-center justify-center p-2 text-zinc-400 hover:text-cyan-300 focus:outline-none focus:text-white md:hidden"
+            class="inline-flex items-center justify-center p-2 text-zinc-400 hover:text-cyan-300 focus:outline-none focus:text-black md:hidden"
             ><svg
               class="w-6 h-6"
               stroke="currentColor"
@@ -58,17 +58,17 @@
           class="flex-col flex-grow hidden py-12 md:py-0 md:flex md:items-end justify-center md:flex-row"
         >
           <ul
-            class="space-y-2 list-none text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6"
+            class="space-y-2 list-none text-sm text-zinc-500 md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6"
           >
-            <li><a href="#work" class="hover:text-cyan-400"> Work</a></li><li>
-              <a href="#how" class="hover:text-cyan-400"> How it works</a>
+            <li><a href="#work" class="hover:text-black"> Work</a></li><li>
+              <a href="#how" class="hover:text-black"> How it works</a>
             </li><li>
-              <a href="#pricing" class="hover:text-cyan-400"> Plans</a>
-            </li><li><a href="#faq" class="hover:text-cyan-400"> Faq</a></li><li
+              <a href="#pricing" class="hover:text-black"> Plans</a>
+            </li><li><a href="#faq" class="hover:text-black"> Faq</a></li><li
             >
               <a
                 href="https://app.monomod.studio/sign-in"
-                class="text-sm py-2 w-auto px-4 border h-8 focus:ring-2 rounded-full border-transparent bg-white/5 hover:bg-transparent text-white duration-200 focus:ring-offset-2 focus:ring-white hover:text-white inline-flex items-center justify-center ring-1 ring-white/10"
+                class="text-sm py-2 w-auto px-4 border h-8 focus:ring-2 rounded-full border-transparent bg-black/5 hover:bg-transparent text-black duration-200 focus:ring-offset-2 focus:ring-black hover:text-black inline-flex items-center justify-center ring-1 ring-black/10"
               >
                 Log in</a>
             </li>

@@ -1,10 +1,6 @@
-<section
-  class="md:px-12 sm:px-8 relative border-b border-zinc-700 scroll-mt-24 2xl:border-x"
->
-  <div class="border-x border-zinc-700 divide-zinc-700">
-    <div
-      class="divide-y divide-zinc-700 "
-    >
+<section>
+  <div class="px-8 md:px-12 py-24 max-w-3xl mx-auto">
+    <div class="divide-y divide-zinc-700">
       <div class="p-8 lg:px-20">
         <span class="text-cyan-400"> Customers love it</span><h2
           class="lg:text-2xl py-3 tracking-tight font-light max-w-xl text-white"
@@ -15,10 +11,10 @@
         </h2>
       </div>
       <div
-        class="flex flex-col lg:flex-row divide-y lg:divide-y-0 lg:items-center lg:divide-x divide-zinc-700"
+        class="flex flex-col lg:items-center"
         x-data="{ testimonialActive: 2 }"
       >
-        <div class="p-8 lg:px-20 shrink-0">
+        <div class="shrink-0">
           <button
             @click.prevent="testimonialActive = 1"
             class="inline-block mx-2 font-bold rounded-full shadow-xs focus:outline-none focus:ring-2 h-12 w-12 opacity-25 ring-1 ring-offset-4 ring-zinc-700 ring-offset-black bg-gradientdown"
@@ -48,7 +44,7 @@
             /></button
           >
         </div>
-        <div class="p-8 lg:px-20 flex flex-col lg:flex-row items-start gap-12">
+        <div class="flex flex-col lg:flex-row items-start gap-12">
           <div class="flex">
             <div
               class=""
