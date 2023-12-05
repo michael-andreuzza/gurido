@@ -1,15 +1,8 @@
-<section
-  class=" scroll-mt-24 "
-  id="faq"
->
+<section class="scroll-mt-24" id="faq">
   <div class="px-8 md:px-12 py-12 max-w-2xl mx-auto">
-    <div
-      class=""
-    >
-      <span class="text-accent-400"> FAQ</span><h2
-        class="text-3xl mt-6 tracking-tighter font-light lg:text-4xl text-black"
-      >
-        The answers to the most <span class="block text-zinc-400"
+    <div class="">
+      <h2 class="text-3xl tracking-tighter font-light lg:text-4xl text-black">
+        The answers to the most <span class="block"
           >popular frequent questions
         </span>
       </h2>
@@ -21,15 +14,19 @@
       </p>
     </div>
     <div x-data="{selected:null}">
-      <ul class="list-none text-black bg-white rounded-3xl divide-y mt-8" role="list" @click="open = !open">
-        <li class="relative ">
+      <ul
+        class="list-none text-black bg-white rounded-3xl divide-y mt-8"
+        role="list"
+        @click="open = !open"
+      >
+        <li class="relative">
           <button
-            class="w-full p-8  text-left"
+            class="w-full p-4 text-left"
             @click="selected !== 1 ? selected = 1 : selected = null"
             type="button"
           >
             <div class="items-center flex justify-between text-black">
-              <p class="text-xl tracking-tight  text-black">
+              <p class="text-lg tracking-tight text-black">
                 Who runs the studio?
               </p>
               <svg
@@ -50,21 +47,21 @@
             x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
             x-ref="container1"
           >
-            <div class="text-sm text-zinc-500  p-8 pt-0 ">
+            <div class="text-sm text-zinc-500 p-8 pt-0">
               My name is Michael Andreuzza, UI Designer and Front end Developer.
               I also build products for myself. Learn more <a
-                class="text-cyan hover:text-black"
+                class="text-accent-500 hover:text-black"
                 href="https://michaelandreuzza.com/">here</a
               >
             </div>
           </div>
-        </li><li class="relative ">
+        </li><li class="relative">
           <button
-            class="w-full p-8  text-left"
+            class="w-full p-4 text-left"
             @click="selected !== 2 ? selected = 2 : selected = null"
             type="button"
             ><div class="items-center flex justify-between text-black">
-              <p class="text-xl tracking-tight  text-black">
+              <p class="text-lg tracking-tight text-black">
                 How do we communicate and manage the project?
               </p><svg
                 class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
@@ -84,21 +81,19 @@
             x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
             x-ref="container2"
           >
-            <div class="text-sm text-zinc-500  p-8 pt-0 ">
+            <div class="text-sm text-zinc-500 p-8 pt-0">
               Monomod uses Breeew for project management, ensuring seamless
               communication and collaboration.
             </div>
           </div>
-        </li><li class="relative ">
+        </li><li class="relative">
           <button
-            class="w-full p-8  text-left"
+            class="w-full p-4 text-left"
             @click="selected !== 3 ? selected = 3 : selected = null"
             type="button"
             ><div class="items-center flex justify-between text-black">
-              <p class="text-xl tracking-tight  text-black">
+              <p class="text-lg tracking-tight text-black">
                 How quickly will I get some work done?
-
-
               </p><svg
                 class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
                 fill="currentColor"
@@ -117,21 +112,20 @@
             x-bind:style="selected == 3 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
             x-ref="container2"
           >
-            <div class="text-sm text-zinc-500  p-8 pt-0 ">
-              Expect the initial concept within 2-3 days, and Monomod will make revisions until it meets your complete satisfaction. For bigger projects it can take up to 4 weeks.
-
+            <div class="text-sm text-zinc-500 p-8 pt-0">
+              Expect the initial concept within 2-3 days, and Monomod will make
+              revisions until it meets your complete satisfaction. For bigger
+              projects it can take up to 4 weeks.
             </div>
           </div>
-        </li><li class="relative ">
+        </li><li class="relative">
           <button
-            class="w-full p-8  text-left"
+            class="w-full p-4 text-left"
             @click="selected !== 4 ? selected = 4 : selected = null"
             type="button"
             ><div class="items-center flex justify-between text-black">
-              <p class="text-xl tracking-tight  text-black">
+              <p class="text-lg tracking-tight text-black">
                 Why do you only have two spots ?
-
-
               </p><svg
                 class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
                 fill="currentColor"
@@ -150,22 +144,23 @@
             x-bind:style="selected == 4 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
             x-ref="container2"
           >
-            <div class="text-sm text-zinc-500  p-8 pt-0 ">
-              Monomod believes in providing the best possible service to clients, and to ensure that, Monomod has decided to limit the workload to just two projects at a time. This approach allows Monomod to dedicate it's full attention and expertise to each project, ensuring quality and timely delivery.
-
+            <div class="text-sm text-zinc-500 p-8 pt-0">
+              Monomod believes in providing the best possible service to
+              clients, and to ensure that, Monomod has decided to limit the
+              workload to just two projects at a time. This approach allows
+              Monomod to dedicate it's full attention and expertise to each
+              project, ensuring quality and timely delivery.
             </div>
           </div>
         </li>
-        <li class="relative ">
+        <li class="relative">
           <button
-            class="w-full p-8  text-left"
+            class="w-full p-4 text-left"
             @click="selected !== 5 ? selected = 5 : selected = null"
             type="button"
             ><div class="items-center flex justify-between text-black">
-              <p class="text-xl tracking-tight  text-black">
+              <p class="text-lg tracking-tight text-black">
                 What if i don't like the design?
-
-
               </p><svg
                 class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
                 fill="currentColor"
@@ -184,23 +179,20 @@
             x-bind:style="selected == 5 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
             x-ref="container2"
           >
-            <div class="text-sm text-zinc-500  p-8 pt-0 ">
-              Monomod wants you to be happy with the results! Hence the unlimited requests.
-
+            <div class="text-sm text-zinc-500 p-8 pt-0">
+              Monomod wants you to be happy with the results! Hence the
+              unlimited requests.
             </div>
           </div>
         </li>
-          <li class="relative ">
+        <li class="relative">
           <button
-            class="w-full p-8  text-left"
+            class="w-full p-4 text-left"
             @click="selected !== 6 ? selected = 6 : selected = null"
             type="button"
             ><div class="items-center flex justify-between text-black">
-              <p class="text-xl tracking-tight  text-black">
+              <p class="text-lg tracking-tight text-black">
                 Are there any refunds?
-
-
-
               </p><svg
                 class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
                 fill="currentColor"
@@ -219,13 +211,20 @@
             x-bind:style="selected == 6 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
             x-ref="container2"
           >
-            <div class="text-sm text-zinc-500  p-8 pt-0 ">
-              Unfortunately, not. Because of the intense creative demands for delivering top-notch design and development within tight timeframes and the thorough research invested to achieve the best outcomes, Monomod's cannot provide our services without compensation.
+            <div class="text-sm text-zinc-500 p-8 pt-0">
+              Unfortunately, not. Because of the intense creative demands for
+              delivering top-notch design and development within tight
+              timeframes and the thorough research invested to achieve the best
+              outcomes, Monomod's cannot provide our services without
+              compensation.
 
-              <br><br>
-              However, we understand the importance of client satisfaction. If, after our initial discussion, it turns out that our services do not align with your needs and no work has been initiated, rest assured that you are eligible for a 100% refund. Monomod value transparency and want our clients to feel confident in their interactions with Monomod's.
-
-
+              <br /><br />
+               However, we understand the importance of client satisfaction. If,
+              after our initial discussion, it turns out that our services do
+              not align with your needs and no work has been initiated, rest
+              assured that you are eligible for a 100% refund. Monomod value
+              transparency and want our clients to feel confident in their
+              interactions with Monomod's.
             </div>
           </div>
         </li>
