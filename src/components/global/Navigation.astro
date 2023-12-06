@@ -1,15 +1,15 @@
-<div class="fixed top-4 inset-x-0 z-50 ">
+<div class="fixed top-4 inset-x-0 z-50">
   <div class="max-w-xl lg:max-w-2xl mx-auto px-8">
     <div class="w-full mx-auto">
       <div
         x-data="{ open: false }"
-        class="relative flex flex-col w-full p-3 mx-auto bg-white ring-1 uppercase ring-zinc-200  backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row"
+        class="relative flex flex-col w-full p-3 mx-auto bg-white ring-1 uppercase ring-zinc-200 backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row"
       >
         <div
           class="flex flex-row items-center justify-between md:justify-start"
         >
           <a
-            class="text-black hover:text-black/50 gap-4 items-center tracking-tighter  inline-flex font-medium ml-2 text-xs"
+            class="text-black hover:text-black/50 gap-4 items-center tracking-tighter inline-flex font-medium ml-2 text-xs"
             href="/"
             ><svg
               class="h-4 text-black"
@@ -52,25 +52,33 @@
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M6 18L18 6M6 6l12 12"></path></svg
-            ></button>
+            ></button
+          >
         </div><nav
           :class="{'flex': open, 'hidden': !open}"
           class="flex-col flex-grow hidden py-12 md:py-0 md:flex md:items-end justify-center md:flex-row"
         >
           <ul
-            class="space-y-2 list-none text-xs text-zinc-500 md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6"
+            class="space-y-2 list-none text-xs text-zinc-500 md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3"
           >
-            <li><a href="#work" class="hover:text-black"> Work</a></li><li>
-              <a href="#how" class="hover:text-black"> How it works</a>
-            </li><li>
-              <a href="#pricing" class="hover:text-black"> Plans</a>
-            </li><li><a href="#faq" class="hover:text-black"> Faq</a></li><li
-            >
+            <li>
+              <a href="https://lexingtonthemes.com/" class="hover:text-black shrink-0"> Templates</a>
+            </li>
+             <li>
+              <a href="#work" class="hover:text-black shrink-0"> Work</a>
+            </li>
+            <li>
+              <a href="#how" class="hover:text-black shrink-0"> How it works</a>
+            </li>
+            <li>
+              <a href="#pricing" class="hover:text-black shrink-0"> Plans</a>
+            </li><li><a href="#faq" class="hover:text-black shrink-0"> Faq</a></li><li class="shrink-0">
               <a
                 href="https://app.monomod.studio/sign-in"
-                class=" py-2 w-auto px-4 border-2 h-8 focus:ring-2 rounded-full border-black bg-black/5 hover:bg-transparent text-black duration-200 focus:ring-offset-2  hover:text-black inline-flex items-center justify-center ring-2 focus:ring-black ring-transparent"
+                class="py-2 w-auto px-4 border-2 h-8 focus:ring-2 rounded-full border-black bg-black/5 hover:bg-transparent text-black duration-200 focus:ring-offset-2 hover:text-black inline-flex items-center justify-center ring-2 focus:ring-black ring-transparent"
               >
-                Log in</a>
+                Log in</a
+              >
             </li>
           </ul>
         </nav>
