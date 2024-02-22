@@ -1,13 +1,15 @@
-<section class="scroll-mt-24" id="work">
-  
-  <div class="px-8 md:px-12 py-24 max-w-2xl mx-auto">
-    <h2 class="text-xl tracking-tighter font-light text-black">
-      Some of MONOMODS work.
-    </h2>
+---
+import One from "../work/One.astro";
+import Two from "../work/Two.astro";
+import Three from "../work/Three.astro";
+import Four from "../work/Four.astro";
+import Five from "../work/Five.astro";
+import Six from "../work/Six.astro";
+---
 
-    <div
-      class="flex flex-col w-full"
-      x-data="{
+<div id="work"
+  class="flex flex-col w-full rounded-3xl scroll-mt-24"
+  x-data="{
       skip: 1,
       atBeginning: false,
       atEnd: false,
@@ -54,115 +56,84 @@
           },
       },
   }"
+>
+  <div
+    class="flex flex-col w-full bg-white rounded-3xl h-full items relative overflow-hidden"
+    aria-labelledby="carousel-label"
+    role="region"
+    tabindex="0"
+    x-on:keydown.left="prev"
+    x-on:keydown.right="next"
+  >
+    <h2 class="sr-only" hidden="" id="carousel-label">Carousel</h2><span
+      class="sr-only"
+      hidden=""
+      id="carousel-content-label">Carousel</span
     >
-      <div
-        class="flex flex-col w-full bg-white rounded-3xl pt-4  mt-4"
-        aria-labelledby="carousel-label"
-        role="region"
+    <p class="absolute left-8 z-50 text-white top-4 mix-blend-difference">
+      Components
+    </p>
+    <div
+      class="items-center justify-center inline-flex mx-auto space-x-2 absolute top-4 inset-x-0 z-30"
+    >
+      <button
+        class="bg-gray-50 hover:bg-white focus:bg-orange-600 focus:text-white rounded-lg inline-flex items-center text-center text-gray-500 p-2 ring-1 ring-gray-200 focus:ring-accent-600"
+        :class="{ 'opacity-50 cursor-not-allowed': atBeginning }"
+        :aria-disabled="atBeginning"
+        :tabindex="atEnd ? -1 : 0"
+        x-on:click="prev"
         tabindex="0"
-        x-on:keydown.left="prev"
-        x-on:keydown.right="next"
+        ><span aria-hidden="true"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="size-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+            ><path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </span><span class="sr-only">Skip to previous slide page</span></button
       >
-        <h2 class="sr-only" hidden="" id="carousel-label">Carousel</h2><span
-          class="sr-only"
-          hidden=""
-          id="carousel-content-label">Carousel</span
-        >
-        <div class="items-center justify-center inline-flex mx-auto space-x-2">
-          <button
-            class="bg-zinc-200 hover:bg-zinc-200 focus:bg-zinc-50 rounded-lg inline-flex items-center text-center text-black p-2 ring-1 ring-zinc-300"
-            :class="{ 'opacity-50 cursor-not-allowed': atBeginning }"
-            :aria-disabled="atBeginning"
-            :tabindex="atEnd ? -1 : 0"
-            x-on:click="prev"
-            tabindex="0"
-            ><span aria-hidden="true"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-3 w-3"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-                ><path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15 19l-7-7 7-7"></path>
-              </svg>
-            </span><span class="sr-only">Skip to previous slide page</span
-            ></button
-          >
-          <button
-            class="bg-zinc-200 hover:bg-zinc-200 focus:bg-zinc-50 rounded-lg inline-flex items-center text-center text-black p-2 ring-1 ring-zinc-300"
-            :class="{ 'opacity-50 cursor-not-allowed': atEnd }"
-            :aria-disabled="atEnd"
-            :tabindex="atEnd ? -1 : 0"
-            x-on:click="next"
-            tabindex="0"
-            ><span aria-hidden="true"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-3 w-3 text-zinc-600 hover:text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-                ><path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 5l7 7-7 7"></path>
-              </svg>
-            </span><span class="sr-only">Skip to next slide page</span></button
-          >
-        </div>
-
-        <div
-          class="flex gap-3 overflow-x-scroll scrollbar-hide snap-mandatory snap-x w-full"
-          role="listbox"
-          aria-labelledby="carousel-content-label"
-          tabindex="0"
-          x-ref="slider"
-        >
-          <div
-            class="items-center justify-center w-full flex flex-col shrink-0 snap-start"
-            role="option"
-            x-bind="disableNextAndPreviousButtons"
-          >
-            <img src="/alfred.png" alt="" />
-          </div>
-          <div
-            class="items-center justify-center w-full flex flex-col shrink-0 snap-start"
-            role="option"
-            x-bind="disableNextAndPreviousButtons"
-          >
-            <img src="/navy.png" alt="" />
-          </div>
-          <div
-            class="items-center justify-center w-full flex flex-col
-          shrink-0 snap-start"
-            role="option"
-            x-bind="disableNextAndPreviousButtons"
-          >
-            <img src="/riflesso.png" alt="" />
-          </div>
-           <div
-            class="items-center justify-center w-full flex flex-col
-          shrink-0 snap-start"
-            role="option"
-            x-bind="disableNextAndPreviousButtons"
-          >
-            <img src="/bal.png" alt="" />
-          </div>
-           <div
-            class="items-center justify-center w-full flex flex-col
-          shrink-0 snap-start"
-            role="option"
-            x-bind="disableNextAndPreviousButtons"
-          >
-            <img src="/wb.png" alt="" />
-          </div>
-        </div>
-      </div>
+      <button
+        class="bg-gray-50 hover:bg-white focus:bg-orange-600 focus:text-white rounded-lg inline-flex items-center text-center text-gray-500 p-2 ring-1 ring-gray-200 focus:ring-accent-600"
+        :class="{ 'opacity-50 cursor-not-allowed': atEnd }"
+        :aria-disabled="atEnd"
+        :tabindex="atEnd ? -1 : 0"
+        x-on:click="next"
+        tabindex="0"
+        ><span aria-hidden="true"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="size-4 "
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+            ><path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </span><span class="sr-only">Skip to next slide page</span></button
+      >
+    </div>
+    <div
+      class="flex gap-3 overflow-x-scroll scrollbar-hide snap-mandatory snap-x w-full h-full relative"
+      role="listbox"
+      aria-labelledby="carousel-content-label"
+      tabindex="0"
+      x-ref="slider"
+    >
+    <Five />
+    <One />
+    <Two />
+    <Three />
+    <Four />
+    <Six />
     </div>
   </div>
-</section>
+</div>

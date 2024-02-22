@@ -1,0 +1,146 @@
+<div
+  class="items-center justify-center w-full flex flex-col p-8 bg-gray-200 rounded-3xl shrink-0 snap-start
+  role="option"
+  x-bind="disableNextAndPreviousButtons"
+>
+  <div
+    x-on:click.stop=""
+    x-trap.noscroll.inert="open"
+    class="relative w-full max-w-lg overflow-hidden border border-gray-300 shadow-2xl rounded-3xl"
+  >
+    <div class="bg-gray-50 rounded-3xl p-10">
+      <div>
+        <h2
+          class="text-xl font-medium text-black  lg:text-2xl"
+          :id="$id('modal-title')"
+          id="modal-title-6"
+        >
+          Customize consent preferences
+        </h2>
+        <!-- Content -->
+        <p class="mt-6 text-gray-600 text-sm text-blance">
+          We use first-party &amp; third-party cookies to provide a better
+          experience, tailor &amp; measure ads, analyze traffic, &amp; personalize
+          content. See Section 4 of our
+          <a href="#_" class="text-orange-600 hover:text-black   duration-200">
+            Privacy Policy</a
+          > to learn more.
+        </p><div
+          class="mt-4 divide-y border-b border-y divide-gray-300 border-gray-300"
+        >
+          <div class="flex items-center justify-between py-3">
+            <span class="flex flex-grow flex-col"
+              ><span
+                class="text-base font-medium leading-6 text-black "
+                id="availability-label">Necesary</span
+              ><span class="text-xs text-gray-600" id="#">
+                Necessary cookies are required for this website to function and
+                cannot be disabled.
+              </span></span
+            ><!-- Toggle -->
+            <div
+              x-data="{ value: false }"
+              class="flex items-center justify-center"
+              x-id="['toggle-label']"
+            >
+              <input
+                type="hidden"
+                name="sendNotifications"
+                :value="value"
+                value="false"
+              /><!-- Label -->
+              <label
+                @click="$refs.toggle.click(); $refs.toggle.focus()"
+                :id="$id('toggle-label')"
+                class="sr-only"
+                id="toggle-label-1"
+              >
+                Toggle
+              </label><!-- Button -->
+              <button
+                x-ref="toggle"
+                @click="value = ! value"
+                type="button"
+                role="switch"
+                :aria-checked="value"
+                :aria-labelledby="$id('toggle-label')"
+                :class="value ? 'bg-orange-600' : 'bg-gray-400/40'"
+                class="relative ml-4 inline-flex w-12 rounded-full py-1 transition bg-gray-300 "
+                aria-checked="false"
+                aria-labelledby="toggle-label-1"
+                ><span
+                  :class="value ? 'translate-x-7' : 'translate-x-1'"
+                  class="bg-white h-4 w-4 rounded-full transition shadow-md translate-x-1"
+                  aria-hidden="true"></span></button
+              >
+            </div>
+          </div><div class="flex items-center justify-between py-3">
+            <span class="flex flex-grow flex-col"
+              ><span
+                class="text-base font-medium leading-6 text-black "
+                id="availability-label">Functional</span
+              ><span class="text-xs text-gray-600" id="#">
+                Functional cookies enable this website to provide enhanced
+                functionality &amp; personalization.
+              </span></span
+            ><!-- Toggle -->
+            <div
+              x-data="{ value: false }"
+              class="flex items-center justify-center"
+              x-id="['toggle-label']"
+            >
+              <input
+                type="hidden"
+                name="sendNotifications"
+                :value="value"
+                value="false"
+              /><!-- Label -->
+              <label
+                @click="$refs.toggle.click(); $refs.toggle.focus()"
+                :id="$id('toggle-label')"
+                class="sr-only"
+                id="toggle-label-2"
+              >
+                Toggle
+              </label><!-- Button -->
+              <button
+                x-ref="toggle"
+                @click="value = ! value"
+                type="button"
+                role="switch"
+                :aria-checked="value"
+                :aria-labelledby="$id('toggle-label')"
+                :class="value ? 'bg-orange-600' : 'bg-gray-400/40'"
+                class="relative ml-4 inline-flex w-12 rounded-full py-1 transition bg-gray-300 "
+                aria-checked="false"
+                aria-labelledby="toggle-label-2"
+                ><span
+                  :class="value ? 'translate-x-7' : 'translate-x-1'"
+                  class="bg-white h-4 w-4 rounded-full transition shadow-md translate-x-1"
+                  aria-hidden="true"></span></button
+              >
+            </div>
+          </div>
+        </div>
+        <div class="inline-flex flex-wrap items-center w-full gap-2 mt-10">
+          <button
+            class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-black   transition-all border rounded-lg bg-gray-100 hover:text-orange-600 border-gray-300"
+          >
+            Save my preferences</button
+          >
+          <button
+            class="flex items-center justify-center w-auto ml-auto h-10 px-4 py-2 text-sm font-semibold text-black   transition-all rounded-lg bg-danger-700 hover:bg-danger-600"
+          >
+            Reject all</button
+          >
+          <button
+            class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-white   transition-all rounded-lg hover:to-orange-600 bg-gradient-to-b from-orange-300 via-orange-400 to-orange-500"
+          >
+            Acept all</button
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

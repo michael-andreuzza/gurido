@@ -1,18 +1,24 @@
 ---
 import BaseHead from "@/components/BaseHead.astro";
-import Navigation from "@/components/global/Navigation.astro"
-import Footer from "@/components/global/Footer.astro"
+import Navigation from "@/components/global/Navigation.astro";
 ---
 
 <html lang="en" class="scroll-smooth selection:bg-black selection:text-white">
   <head>
     <BaseHead />
   </head>
-  <body class="bg-zinc-100 flex flex-col min-h-screen mx-auto 2xl:max-w-screen-xl relative">
+  <body
+    class="bg-gray-100 flex flex-col min-h-screen mx-auto 2xl:max-w-screen-xl relative "
+  >
 
-    <Navigation/>
-    <main class="flex-grow"><slot /></main>
-    <Footer/>
-
+    <Navigation />
+    <main class="flex-grow relative"><slot /></main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

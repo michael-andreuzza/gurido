@@ -5,78 +5,12 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
-      animation: {
-        marquee: "marquee 25s linear infinite",
-        marquee2: "marquee2 25s linear infinite",
-        scroller3: "scroller3 25s linear infinite",
-        "spin-slow": "spin 4s linear infinite",
-        "spin-slower": "spin 6s linear infinite",
-        "spin-reverse": "spin-reverse 1s linear infinite",
-        "spin-reverse-slow": "spin-reverse 4s linear infinite",
-        "spin-reverse-slower": "spin-reverse 6s linear infinite",
-        scroller: "scroller 15s linear infinite",
-        scroller2: "scroller2 20s linear infinite",
-        "fade-in": "fade-in 0.5s linear forwards",
-      },
-      keyframes: {
-        marquee: {
-          "0%": {
-            transform: "translateX(0%)",
-          },
-          "100%": {
-            transform: "translateX(-100%)",
-          },
-        },
-        marquee2: {
-          "0%": {
-            transform: "translateX(100%)",
-          },
-          "100%": {
-            transform: "translateX(0%)",
-          },
-        },
-        scroller: {
-          "0%": {
-            transform: "translateY(10em)",
-          },
-          "100%": {
-            transform: "translateY(-14em)",
-          },
-        },
-        scroller2: {
-          "0%": {
-            transform: "translateY(10em)",
-          },
-          "100%": {
-            transform: "translateY(-14em)",
-          },
-        },
-        "fade-in": {
-          from: {
-            opacity: 0,
-          },
-          to: {
-            opacity: 1,
-          },
-        },
-        scroller3: {
-          "100%": {
-            transform: "translateY(-50%)",
-          },
-        },
-        "spin-reverse": {
-          to: {
-            transform: "rotate(-360deg)",
-          },
-        },
-      },
       backgroundImage: (theme) => ({
-        gradientTopRight:
-          "linear-gradient(229.7deg,#fdfdfe 24.85%,#ffbb88 30.61%,#ff7cba 36.17%,#887bff 41.93%,#03c7f6 6.54%,#fff 54.36%)",
-          gradientBottomLeft:
-          "linear-gradient(47deg, #FDFDFE 10.68%, #FB8 17.61%, #FF7CBA 24.3%, #887BFF 31.23%, #03C7F6 48.82%, #0F1014 58.23%)",
-          gradientToTop:
-          "linear-gradient(0deg, #FFF -3.39%, #FB8 8.4%, #FF7CBA 26.83%, #887BFF 36.61%, #03C7F6 41.42%, #ffffff 94.69%)",
+        // Buio
+        gradientdown:
+          "radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#364ef580 69.27%,#6698ff 100%);",
+        gradientup:
+          "radial-gradient(131.66% 109.77% at 50% 97.75%, transparent 37.41%,#364ef580   69.27%,  #6698ff 100%);",
       }),
       boxShadow: {
         thick: "0px 7px 32px rgb(0 0 0 / 35%);",
@@ -87,22 +21,59 @@ module.exports = {
         black: "#0f1014",
         ebony: "#1a1c23",
         mirage: "#27292D",
-        //
-        //black: "#191919",
-        //ebony: "#272727",
-        //mirage: "#333333",
-        accent: {
-          50: "#ECEEFE",
-          100: "#D8DDFD",
-          200: "#ACB7FB",
-          300: "#8695F9",
-          400: "#5F73F7",
-          500: "#364EF5",
-          600: "#0B28E4",
-          700: "#081EAA",
-          800: "#061470",
-          900: "#030A3A",
-          950: "#01051D",
+        grass: "#279e54",
+        // Buio
+        blue: {
+          50: "#ecf4ff",
+          100: "#ddebff",
+          200: "#c1d8ff",
+          300: "#9bbfff",
+          400: "#7498ff",
+          500: "#5374ff", //default
+          600: "#3c51f7",
+          700: "#2839da",
+          800: "#2332b0",
+          900: "#25338a",
+          950: "#161d50",
+        },
+        yellow: {
+          50: "#fefbec",
+          100: "#fcf1c9",
+          200: "#fae28d",
+          300: "#f7cd52",
+          400: "#f5ba30", //default
+          500: "#ee9812",
+          600: "#d3730c",
+          700: "#af510e",
+          800: "#8e3e12",
+          900: "#753412",
+          950: "#431a05",
+        },
+        green: {
+          50: "#f1fcf5",
+          100: "#dff9e8",
+          200: "#c1f1d2",
+          300: "#91e4b0",
+          400: "#59cf85",
+          500: "#33b463",
+          600: "#279e54", //default
+          700: "#207541",
+          800: "#1e5d37",
+          900: "#1b4c2e",
+          950: "#092a17",
+        },
+        orange: {
+          50: "hsl(22, 100%, 96%)",
+          100: "hsl(25, 100%, 91%)",
+          200: "hsl(22, 100%, 82%)",
+          300: "hsl(20, 100%, 71%)",
+          400: "hsl(16, 100%, 60%)",
+          500: "hsl(14, 100%, 52%)",
+          600: "hsl(9, 100%, 50%)", //default
+          700: "hsl(6, 98%, 40%)",
+          800: "hsl(4, 87%, 34%)",
+          900: "hsl(4, 83%, 28%)",
+          950: "hsl(1, 89%, 15%)",
         },
       },
       borderRadius: {
