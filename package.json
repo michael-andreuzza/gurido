@@ -12,14 +12,14 @@
   },
   "dependencies": {
     "@astrojs/preact": "^3.1.0",
-    "@astrojs/sitemap": "^3.0.5",
+    "@astrojs/sitemap": "^3.1.1",
     "@astrojs/tailwind": "^5.1.0",
     "@astrolib/seo": "^1.0.0-beta.5",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
-    "astro": "^4.4.0",
-    "preact": "^10.19.5",
+    "astro": "^4.4.2",
+    "preact": "^10.19.6",
     "tailwind-scrollbar-hide": "^1.1.7"
   }
 }
