@@ -70,7 +70,8 @@ module.exports = {
         "6xl": "5rem",
       },
       fontFamily: {
-        sans: ["Atipla ND", ...defaultTheme.fontFamily.sans],
+        display: ["Comico", ...defaultTheme.fontFamily.sans],
+        sans: ["Switzer", ...defaultTheme.fontFamily.sans],
       },
     },
   },
