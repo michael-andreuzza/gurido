@@ -4,6 +4,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://monomod.studio/",
+  site: "https://yoursite.com/",
   integrations: [tailwind(), sitemap()]
 });

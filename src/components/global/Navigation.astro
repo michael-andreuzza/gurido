@@ -1,36 +1,15 @@
-<div class="fixed top-2 lg:bottom-2 lg:top-auto  inset-x-0 z-50 ">
-  <div class="max-w-4xl mx-auto  px-4">
+<div class="fixed top-2 lg:bottom-2 lg:top-auto inset-x-0 z-50">
+  <div class="max-w-4xl mx-auto px-4">
     <div class="w-full mx-auto">
       <div
         x-data="{ open: false }"
-        class="relative flex flex-col w-full p-4 mx-auto bg-black  uppercase rounded-2xl  md:items-center md:justify-between md:flex-row"
-      >
+        class="relative flex flex-col w-full p-4 mx-auto bg-black uppercase rounded-2xl md:items-center md:justify-between md:flex-row">
         <div
-          class="flex flex-row items-center justify-between md:justify-start"
-        >
+          class="flex flex-row items-center justify-between md:justify-start">
           <a
-            class="text-white hover:text-white/50 gap-4 items-center tracking-tighter inline-flex font-medium ml-2 text-xs"
-            href="/"
-            ><svg
-              class="h-4 text-white"
-              viewBox="0 0 2030 278"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              ><g clip-path="url(#clip0_121_10)"
-                ><path
-                  d="M337.298 256V15.1772H413.329L478.007 205.427L542.341 15.1772H618.373V256H565.392V194.074C565.392 139.717 579.153 91.5524 597.387 52.3327V48.8924H580.185L505.53 256H450.141L375.486 48.8924H358.284V52.3327C376.518 91.5524 390.279 139.717 390.279 194.074V256H337.298ZM732.444 261.505C657.1 261.505 609.624 212.652 609.624 135.245C609.624 58.1813 657.1 9.67268 732.444 9.67268C808.131 9.67268 855.607 58.1813 855.607 135.245C855.607 212.652 808.131 261.505 732.444 261.505ZM668.109 135.245C668.109 182.033 692.88 211.964 732.444 211.964C772.351 211.964 797.122 182.033 797.122 135.245C797.122 88.4561 772.351 59.2134 732.444 59.2134C692.88 59.2134 668.109 88.4561 668.109 135.245ZM847.044 256V15.1772H921.355L1021.81 218.156H1039.01V214.716C1018.72 176.528 1008.4 145.91 1008.4 113.226V15.1772H1061.38V256H988.097L885.232 48.8924H868.03V52.3327C886.264 80.5434 900.025 115.291 900.025 154.51V256H847.044ZM1172.31 261.505C1096.96 261.505 1049.49 212.652 1049.49 135.245C1049.49 58.1813 1096.96 9.67268 1172.31 9.67268C1248 9.67268 1295.47 58.1813 1295.47 135.245C1295.47 212.652 1248 261.505 1172.31 261.505ZM1107.97 135.245C1107.97 182.033 1132.74 211.964 1172.31 211.964C1212.22 211.964 1236.99 182.033 1236.99 135.245C1236.99 88.4561 1212.22 59.2134 1172.31 59.2134C1132.74 59.2134 1107.97 88.4561 1107.97 135.245ZM1286.91 256V15.1772H1362.94L1427.62 205.427L1491.95 15.1772H1567.98V256H1515V194.074C1515 139.717 1528.76 91.5524 1547 52.3327V48.8924H1529.8L1455.14 256H1399.75L1325.1 48.8924H1307.89V52.3327C1326.13 91.5524 1339.89 139.717 1339.89 194.074V256H1286.91ZM1682.05 261.505C1606.71 261.505 1559.23 212.652 1559.23 135.245C1559.23 58.1813 1606.71 9.67268 1682.05 9.67268C1757.74 9.67268 1805.22 58.1813 1805.22 135.245C1805.22 212.652 1757.74 261.505 1682.05 261.505ZM1617.72 135.245C1617.72 182.033 1642.49 211.964 1682.05 211.964C1721.96 211.964 1746.73 182.033 1746.73 135.245C1746.73 88.4561 1721.96 59.2134 1682.05 59.2134C1642.49 59.2134 1617.72 88.4561 1617.72 135.245ZM1796.65 256V15.1772H1889.54C1966.26 15.1772 2016.49 58.1813 2016.49 135.933C2016.49 212.996 1966.26 256 1889.54 256H1796.65ZM1851.36 211.276H1889.54C1926.35 211.276 1960.41 190.634 1960.41 135.933C1960.41 80.8874 1926.35 59.9014 1889.54 59.9014H1851.36V211.276Z"
-                  fill="currentColor"></path><path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M260.474 138.55C260.474 205.887 205.887 260.474 138.55 260.474C71.2131 260.474 16.626 205.887 16.626 138.55C16.626 71.2131 71.2131 16.626 138.55 16.626C205.887 16.626 260.474 71.2131 260.474 138.55ZM277.1 138.55C277.1 215.068 215.068 277.1 138.55 277.1C62.0309 277.1 0 215.068 0 138.55C0 62.0309 62.0309 0 138.55 0C215.068 0 277.1 62.0309 277.1 138.55ZM138.55 153.79C146.967 153.79 153.79 146.967 153.79 138.55C153.79 130.133 146.967 123.309 138.55 123.309C130.133 123.309 123.309 130.133 123.309 138.55C123.309 146.967 130.133 153.79 138.55 153.79Z"
-                  fill="currentColor"></path></g
-              ><defs
-                ><clipPath id="clip0_121_10"
-                  ><rect width="2030" height="277.1" fill="black"
-                  ></rect></clipPath
-                ></defs
-              ></svg
-            ></a
+            class="text-white hover:text-white/50 gap-4 items-center tracking-tighter inline-flex font-medium ml-2 text-xl"
+            href="/">
+            Gurido</a
           ><button
             @click="open = !open"
             class="inline-flex items-center justify-center p-2 text-white hover:text-cyan-300 focus:outline-none focus:text-white md:hidden"
@@ -45,38 +24,58 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"></path><path
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path><path
                 :class="{'hidden': !open, 'inline-flex': open }"
                 class="hidden"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"></path></svg
+                d="M6 18L18 6M6 6l12 12"
+              ></path></svg
             ></button
           >
         </div><nav
           :class="{'flex': open, 'hidden': !open}"
-          class="flex-col flex-grow hidden py-12 md:py-0 md:flex md:items-end justify-center md:flex-row"
-        >
+          class="flex-col flex-grow hidden py-12 md:py-0 md:flex md:items-end justify-center md:flex-row">
           <ul
-            class="space-y-4 list-none text-xs lg:text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3"
-          >
+            class="space-y-4 list-none text-xs lg:text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3">
             <li>
-              <a href="https://lexingtonthemes.com/" class="hover:text-white shrink-0"> Templates</a>
-            </li>
-             <li>
-              <a href="#work" class="hover:text-white shrink-0"> Work</a>
-            </li>
-            <li>
-              <a href="#how" class="hover:text-white shrink-0"> How it works</a>
-            </li>
-            <li>
-              <a href="#pricing" class="hover:text-white shrink-0"> Plans</a>
-            </li><li><a href="#faq" class="hover:text-white shrink-0"> Faq</a></li><li class="shrink-0">
               <a
-                href="https://app.monomod.studio/sign-in"
-                class="py-2 w-auto px-4 border-2 h-8 lg:h-10 lg:px-6 focus:ring-2 rounded-lg border-white bg-white hover:bg-transparent text-black duration-200 focus:ring-offset-2 hover:text-white inline-flex items-center justify-center ring-2 focus:ring-black ring-transparent"
+                href="https://lexingtonthemes.com/"
+                class="hover:text-white shrink-0">
+                Templates</a
               >
+            </li>
+            <li>
+              <a
+                href="#work"
+                class="hover:text-white shrink-0">
+                Work</a
+              >
+            </li>
+            <li>
+              <a
+                href="#how"
+                class="hover:text-white shrink-0">
+                How it works</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="hover:text-white shrink-0">
+                Plans</a
+              >
+            </li><li>
+              <a
+                href="#faq"
+                class="hover:text-white shrink-0">
+                Faq</a>
+            </li><li class="shrink-0">
+              <a
+                href="#"
+                class="py-2 w-auto px-4 border-2 h-8 lg:h-10 lg:px-6 focus:ring-2 rounded-lg border-white bg-white hover:bg-transparent text-black duration-200 focus:ring-offset-2 hover:text-white inline-flex items-center justify-center ring-2 focus:ring-black ring-transparent">
                 Log in</a
               >
             </li>

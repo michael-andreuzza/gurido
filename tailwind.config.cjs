@@ -5,24 +5,12 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
-        // Buio
-        gradientdown:
-          "radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#364ef580 69.27%,#6698ff 100%);",
-        gradientup:
-          "radial-gradient(131.66% 109.77% at 50% 97.75%, transparent 37.41%,#364ef580   69.27%,  #6698ff 100%);",
-      }),
-      boxShadow: {
-        thick: "0px 7px 32px rgb(0 0 0 / 35%);",
-        inset:
-          "inset 6px 84px 79px -40px hsla(0,0%,100%,.025), inset 0 -4px 1px -3px hsla(0,0%,100%,.25), inset 0 4px 1px -3px hsla(0,0%,100%,.25);",
-      },
       colors: {
         black: "#0f1014",
         ebony: "#1a1c23",
         mirage: "#27292D",
         grass: "#279e54",
-        // Buio
+        // blue
         blue: {
           50: "#ecf4ff",
           100: "#ddebff",
